@@ -1,0 +1,21 @@
+[user]
+	# email specified elsewhere
+	name = Sufian Rhazi
+[core]
+	editor = vim
+	pager = less -+$LESS -FRX
+[color]
+	ui = auto
+[help]
+	format = man
+[log]
+	decorate = full
+[merge]
+	tool = vimdiff
+[sequence]
+	editor = vim
+[status]
+	submodulesummary = 1
+[alias]
+	logg = log --decorate=full --graph --all --pretty='format:%C(yellow)%h%Creset%C(bold blue)%d%Creset %C(cyan ul)%aE%Creset %C(bold red)[%ar]%Creset %s'
+        weekly = "!f() { git fetch; git log --stat --since='1 week ago' --author=$1 origin/master; }; f"
